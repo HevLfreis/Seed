@@ -43,39 +43,38 @@
 					<section id="two">
 						<h2>My Projects</h2>
 						<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+
+
+							<article class="col-md-6 work-item">
+								<a href="{{ url_for('static', filename='files/SWeather.apk') }}" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/sw.jpg') }}" alt="" /></a>
+								<h3>SWeather</h3>
+								<p>...</p>
 							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+              <article class="col-md-6 work-item">
+                <a href="http://v.youku.com/v_show/id_XMTQ4MDkyNTg4OA==.html" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/md.jpg') }}" alt="" /></a>
+                <h3>MDIDroid</h3>
+                <p>...</p>
+              </article>
+              <article class="col-md-6 work-item">
+                <a href="http://115.28.204.186:8080/" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/aap.jpg') }}" alt="" /></a>
+                <h3>AAP</h3>
+                <p>...</p>
+              </article>
+              <article class="col-md-6 work-item">
+                <a href="http://115.28.204.186:8081/" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/dj.jpg') }}" alt="" /></a>
+                <h3>Device Judge</h3>
+                <p>...</p>
+              </article>
+
+							<article class="col-md-6 work-item">
+								<a href="#" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/01.jpg') }}" alt="" /></a>
+								<h3>LineMe</h3>
+								<p>...</p>
 							</article>
 						</div>
+
 						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
+							<li><a href="https://github.com/HevLfreis" target="_blank" class="button">Full on Github</a></li>
 						</ul>
 					</section>
 
@@ -427,6 +426,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
+
           <li><a href="https://github.com/HevLfreis" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 {#					<li><a href="#" class="icon fa-weibo"><span class="label">Twitter</span></a></li>#}
 {#					<li><a href="#" class="icon fa-linkedin"><span class="label">Dribbble</span></a></li>#}
@@ -437,12 +437,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+{#			<script src="{{ url_for('static', filename='js/util.js') }}"></script>#}
+			<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/respond.min.js') }}"></script><![endif]-->
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 	</body>
 </html>
