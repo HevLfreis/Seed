@@ -15,6 +15,12 @@
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='css/ie8.css') }}" /><![endif]-->
 	</head>
+  <style type="text/css">
+    h3:hover {
+      cursor: pointer;
+      text-decoration:underline;
+    }
+  </style>
 	<body id="top">
 
 		<!-- Header -->
@@ -27,7 +33,17 @@
 
 		<!-- Main -->
 			<div id="main">
-        {{ html | safe }}
+        <header class="major">
+          <h2>{{ title }}</h2>
+        </header>
+      <ol>
+        {% for cat in cats %}
+          <li>
+            <h3 class="cat" onclick="window.location.href='/md/{{ cat.id }}'">{{ cat.title }}<span class="pull-right">{{ cat.timestamp }}</span></h3>
+          </li>
+        {% endfor %}
+      </ol>
+
 			</div>
 
 		<!-- Footer -->
@@ -50,21 +66,6 @@
 {#			<script src="{{ url_for('static', filename='js/util.js') }}"></script>#}
 			<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/respond.min.js') }}"></script><![endif]-->
 			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
-{#      <script src="{{ url_for('static', filename='js/showdown.min.js') }}"></script>#}
-{#      <script type="text/javascript">#}
-{##}
-{#        $.get("{{ url_for('static', filename='files/README.md') }}").success(function(content){#}
-{#          var converter = new showdown.Converter(),#}
-{#                  text      = '### hello, markdown!',#}
-{#                  html      = converter.makeHtml(content);#}
-{#          console.log(html);#}
-{##}
-{#          $('#main').append(html);#}
-{##}
-{#        });#}
-{##}
-{##}
-{#      </script>#}
 
 
 	</body>
