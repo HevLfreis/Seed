@@ -4,38 +4,38 @@
 # Date: 2016/5/17 
 # Time: 13:34
 #
-from sqlalchemy import Column, String, DateTime
-from sqlalchemy import Integer
-from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
+from config import db
 
 
-class Log(Base):
+class Log(db.Model):
+
     __tablename__ = 'log'
-    id = Column(Integer, primary_key=True)
-    timestamp = Column(DateTime)
+
+    id = db.Column(db.Integer, primary_key=True)
+    timestamp = db.Column(db.DateTime)
 
 
-class MarkDown(Base):
+class MarkDown(db.Model):
+
     __tablename__ = 'md'
 
-    id = Column(Integer, primary_key=True)
-    title = Column(String(50))
-    cat = Column(String(50))
-    tag = Column(String(20), nullable=True)
-    content = Column(String(20000), nullable=True)
-    click = Column(Integer, default=0)
-    timestamp = Column(DateTime)
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50))
+    cat = db.Column(db.String(50))
+    tag = db.Column(db.String(20), nullable=True)
+    content = db.Column(db.String(20000), nullable=True)
+    click = db.Column(db.Integer, default=0)
+    timestamp = db.Column(db.DateTime)
 
 
-class ACG(Base):
+class ACG(db.Model):
+
     __tablename__ = 'acg'
 
-    id = Column(Integer, primary_key=True)
-    title = Column(String(50))
-    tag = Column(Integer)
-    content = Column(String(1000))
-    time = Column(DateTime)
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50))
+    tag = db.Column(db.Integer)
+    content = db.Column(db.String(1000))
+    time = db.Column(db.DateTime)
 
 
