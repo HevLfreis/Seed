@@ -5,6 +5,8 @@
 # Time: 18:55
 #
 import sys
+from config import db
+
 sys.path.insert(0, '/usr/lib/python2.7/dist-packages')
 sys.path.insert(0, '/usr/local/lib/python2.7/dist-packages')
 
@@ -14,15 +16,11 @@ import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from models import Base, MarkDown
+from models import MarkDown
 import misaka as m
 
 
-mysql_link = 'mysql://root:12345678@127.0.0.1/seed?charset=utf8'
-mysql_engine = create_engine(mysql_link, echo=False)
-Base.metadata.create_all(mysql_engine)
-Session = sessionmaker(bind=mysql_engine)
-session = Session()
+db.create_all()
 
 mddir = os.getcwd()+'/static/files/md'
 files = os.listdir(mddir)
@@ -38,7 +36,7 @@ for md in files:
                         cat=md.rstrip('.md').split('_')[1],
                         content=text,
                         timestamp=datetime.datetime.today())
-        session.add(blog)
+        db.session.add(blog)
 
         # print text
         #
@@ -46,4 +44,4 @@ for md in files:
         #
         # print html
 
-session.commit()
+db.session.commit()

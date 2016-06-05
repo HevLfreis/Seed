@@ -1,4 +1,5 @@
 # coding: utf-8
+import codecs
 import datetime
 
 from flask import Flask, render_template, send_from_directory
@@ -8,13 +9,6 @@ import misaka as m
 from flask_sqlalchemy import SQLAlchemy
 
 
-
-
-# mysql_link = 'mysql://root:12345678@127.0.0.1/seed?charset=utf8'
-# mysql_engine = create_engine(mysql_link, echo=False, pool_recycle=7200)
-# Base.metadata.create_all(mysql_engine)
-# Session = sessionmaker(bind=mysql_engine)
-# session = Session()
 
 
 @app.route('/static/images/md/<path>')
@@ -58,6 +52,14 @@ def acg():
 def piece():
     pieces = db.session.query(MarkDown).filter_by(cat='piece').all()
     return render_template('cat2.html', title='Piece', cats=pieces)
+
+
+@app.route('/resume')
+def resume():
+    with codecs.open(app.static_folder+'/files/md/resume.md', 'r', encoding='utf8') as f:
+        text = f.read()
+    res = m.html(text)
+    return render_template('blank.html', html=res)
 
 
 @app.route('/md/<id>')
