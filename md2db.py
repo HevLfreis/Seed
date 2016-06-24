@@ -27,7 +27,7 @@ files = os.listdir(mddir)
 
 for md in files:
     print md
-    if md.endswith('md'):
+    if md.endswith('memo.md'):
 
         with codecs.open(mddir+'/'+md, 'r', encoding='utf8') as f:
             text = f.read()

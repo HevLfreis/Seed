@@ -20,8 +20,8 @@ class MarkDown(db.Model):
     __tablename__ = 'md'
 
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(50))
-    cat = db.Column(db.String(50))
+    title = db.Column(db.String(200))
+    cat = db.Column(db.String(200))
     tag = db.Column(db.String(20), nullable=True)
     content = db.Column(db.String(20000), nullable=True)
     click = db.Column(db.Integer, default=0)

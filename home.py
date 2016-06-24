@@ -2,14 +2,14 @@
 import codecs
 
 import misaka as m
-from flask import render_template, send_from_directory
+from flask import render_template, send_from_directory, request
 
-from config import app
+from config import app, logger
 
 
-@app.route('/static/images/md/<path>')
-def send_md_img(path):
-    return send_from_directory(app.static_folder+'/images/md/', path)
+# @app.route('/static/images/md/<path>')
+# def send_md_img(path):
+#     return send_from_directory(app.static_folder+'/images/md/', path)
 
 
 @app.route('/')
@@ -24,6 +24,7 @@ def seed():
     #     print 'Seed Exception: ', e
     # finally:
     #     print 'Seed'
+    logger.info('('+request.remote_addr+')')
     return render_template('index.html')
 
 
@@ -53,6 +54,7 @@ def seed():
 
 @app.route('/resume')
 def resume():
+    logger.info('('+request.remote_addr+')')
     with codecs.open(app.static_folder+'/files/md/resume.md', 'r', encoding='utf8') as f:
         text = f.read()
     res = m.html(text)
@@ -67,6 +69,5 @@ def resume():
 
 
 if __name__ == '__main__':
-
-    app.run(debug=True)
+    app.run()
 
