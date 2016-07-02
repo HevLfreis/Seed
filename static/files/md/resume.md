@@ -36,7 +36,7 @@
     MDIDroid is a security Android system based on Android 4.4.2 KitKat. The main purpose of the system is to protect different apps of different uses. As a customized system of SEAndroid, we extend its MAC module to user-level. Instead of checking the signature to allocate the corresponding domain for the app in SEAndroid, MDIDroid check the package name for achieving more flexibility and freedom.  
     [演示视频](http://v.youku.com/v_show/id_XMTQ4MDkyNTg4OA==.html), [Github链接](https://github.com/HevLfreis/MDIDroid)
 
-3. ### “理想杯”大学生大数据创新应用与建模大赛
+3. ### “理想杯”大学生大数据创新应用与建模大赛 二等奖（第二名）
     **智慧社区**  
     waiting...  
     [项目地址](http://ic.seeleit.com/)
@@ -94,7 +94,7 @@
     MDIDroid is a security Android system based on Android 4.4.2 KitKat. The main purpose of the system is to protect different apps of different uses. As a customized system of SEAndroid, we extend its MAC module to user-level. Instead of checking the signature to allocate the corresponding domain for the app in SEAndroid, MDIDroid check the package name for achieving more flexibility and freedom.  
     [Demo video](http://v.youku.com/v_show/id_XMTQ4MDkyNTg4OA==.html), [Github link](https://github.com/HevLfreis/MDIDroid)
 
-3. ### Lixiang Cup Data Contest of China Telecom
+3. ### Lixiang Cup Data Contest of China Telecom (Second Place)
     **Smart Community**  
     waiting...  
     [Project link](http://ic.seeleit.com/)
