@@ -85,7 +85,7 @@
       The project is an Android apk static analysis web platform. Here you can upload your apk file to check out its static security info. Also, we collect over 10000 apk samples from Android markets and present the statistics of all the apks.  Completed by **single-person**.   
     [Project link](http://aap.seeleit.com/), [Github link](https://github.com/HevLfreis/AAP)
 
-    - **Devicejudge: A platfrom of monitoring user behaviors in net traffic**
+    - **Devicejudge: A platfrom of monitoring user behaviors in net traffic**  
       Devicejudge(DJ) is a basic monitoring platform which focus on the user behaviors, like devices and apps people usage, in net traffic. DJ comprises two parts: traffic scanner and web dashboard. The traffic scanner captures the info of devices and apps through HTTP UserAgent and app fingerprints from net traffic. The web dashboard is used to manage the info we have collected. Completed by **single-person**.  
     [Project link](http://dj.seeleit.com/), [Github link](https://github.com/HevLfreis/Devicejudge)
 
