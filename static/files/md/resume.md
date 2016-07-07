@@ -39,7 +39,7 @@
 3. ### “理想杯”大学生大数据创新应用与建模大赛 二等奖（第二名）
     **智慧社区**  
     waiting...  
-    [项目地址](http://ic.seeleit.com/)
+    [项目地址](http://ic.seeleit.com/), [Github链接](https://github.com/HevLfreis/IComm)
 
 4. ### 复杂网络与控制实验室
     **LineMe**  
@@ -95,9 +95,9 @@
     [Demo video](http://v.youku.com/v_show/id_XMTQ4MDkyNTg4OA==.html), [Github link](https://github.com/HevLfreis/MDIDroid)
 
 3. ### Lixiang Cup Data Contest of China Telecom (Second Place)
-    **Smart Community**  
+    **Intelligent Community**  
     waiting...  
-    [Project link](http://ic.seeleit.com/)
+    [Project link](http://ic.seeleit.com/), [Github link](https://github.com/HevLfreis/IComm)
 
 4. ### Complex Network and Control Lab
     **LineMe**  
