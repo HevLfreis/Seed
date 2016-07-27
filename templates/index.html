@@ -8,7 +8,9 @@
 		<!--[if lte IE 8]><script src="{{ url_for('static', filename='seed/js/ie/html5shiv.js') }}"></script><![endif]-->
     <link rel="stylesheet" href="{{ url_for('static', filename='seed/css/bootstrap.css') }}" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='seed/css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='seed/css/csshake.min.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='plugins/rollbar/css/jquery.rollbar.css') }}" />
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='seed/css/ie8.css') }}" /><![endif]-->
 	</head>
   <style type="text/css">
@@ -17,7 +19,7 @@
       width: 100%;
       height: 100%;
     }
-    h3:hover {
+    .git:hover {
       cursor: pointer;
       color: #080808;
     }
@@ -25,62 +27,68 @@
   </style>
 	<body id="top">
     <header id="header">
-      <a href="#" class="image avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="" /></a>
+      <a href="/" class="image avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="" /></a>
 {#				<h1><strong>H. Teng</strong></h1>#}
-      <h1>nothing to cele, fight inside peace</h1>
+      <h1>building the world</h1>
     </header>
     <div id="main">
-      <section id="one">
+      <section>
         <header class="major">
           <h2>Here's SEED</h2>
           <h3>Hi , I am Haytham Teng , Welcome to my homepage</h3>
+          <h4>A coder, sometimes a PM or a designer (= =). Enjoy technologies and ACGs</h4>
         </header>
         <p>&lt;el psy congroo&gt;</p>
         <ul class="actions">
           <li><a href="/resume" class="button">About Me</a></li>
         </ul>
       </section>
-      <section id="two">
+      <section>
         <h2>My Projects</h2>
         <div class="row">
           <article class="col-md-6 work-item">
+            <a href="/songci" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/sc.jpg') }}" alt="" /></a>
+            <h3 class="git">吟宋词</h3>
+            <p>RNN 宋词生成器</p>
+          </article>
+          <article class="col-md-6 work-item">
             <a href="{{ url_for('static', filename='files/SWeather.apk') }}" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/sw.jpg') }}" alt="" /></a>
-            <h3 onclick="window.open('https://github.com/HevLfreis/SWeather')">SWeather</h3>
+            <h3 class="git" onclick="window.open('https://github.com/HevLfreis/SWeather')">SWeather</h3>
             <p>Android weather app</p>
           </article>
           <article class="col-md-6 work-item">
             <a href="http://v.youku.com/v_show/id_XMTQ4MDkyNTg4OA==.html" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/md.jpg') }}" alt="" /></a>
-            <h3 onclick="window.open('https://github.com/HevLfreis/MDIDroid')">MDIDroid</h3>
+            <h3 class="git" onclick="window.open('https://github.com/HevLfreis/MDIDroid')">MDIDroid</h3>
             <p>Android security system</p>
           </article>
           <article class="col-md-6 work-item">
-            <a href="http://aap.seeleit.com/" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/aap.jpg') }}" alt="" /></a>
-            <h3 onclick="window.open('https://github.com/HevLfreis/AAP')">AAP</h3>
-            <p>Android apk analysis web platform</p>
+            <a href="#" class="image fit thumb" ondblclick="window.open('http://lime.seeleit.com/')"><img src="{{ url_for('static', filename='images/fulls/ud.jpg') }}" alt="" /></a>
+            <h3 class="git" onclick="window.open('https://github.com/HevLfreis/LineMe')">LineMe</h3>
+            <p>A multiplex social network collecting web platform</p>
           </article>
           <article class="col-md-6 work-item">
-            <a href="http://dj.seeleit.com/" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/dj.jpg') }}" alt="" /></a>
-            <h3 onclick="window.open('https://github.com/HevLfreis/Devicejudge')">Device Judge</h3>
-            <p>A platfrom of monitoring user behaviors in net traffic</p>
-          </article>
-          <article class="col-md-6 work-item">
-            <a href="http://ic.seeleit.com/" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/sc.jpg') }}" alt="" /></a>
+            <a href="http://ic.seeleit.com/" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/ic.jpg') }}" alt="" /></a>
             <h3 onclick="window.open('https://github.com/HevLfreis/IComm')">Intelligent Community</h3>
             <p>Project for Lixiang Cup Data Contest of China Telecom</p>
           </article>
           <article class="col-md-6 work-item">
-            <a href="#" class="image fit thumb" ondblclick="window.open('http://lime.seeleit.com/')"><img src="{{ url_for('static', filename='images/fulls/ud.jpg') }}" alt="" /></a>
-            <h3 onclick="window.open('https://github.com/HevLfreis/LineMe')">LineMe</h3>
-            <p>A multiplex social network collecting web platform</p>
+            <a href="http://aap.seeleit.com/" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/aap.jpg') }}" alt="" /></a>
+            <h3 class="git" onclick="window.open('https://github.com/HevLfreis/AAP')">AAP</h3>
+            <p>Android apk analysis web platform</p>
+          </article>
+          <article class="col-md-6 work-item">
+            <a href="http://dj.seeleit.com/" target="_blank" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/dj.jpg') }}" alt="" /></a>
+            <h3 class="git" onclick="window.open('https://github.com/HevLfreis/Devicejudge')">Device Judge</h3>
+            <p>A platfrom of monitoring user behaviors in net traffic</p>
           </article>
         </div>
         <ul class="actions">
           <li><a href="https://github.com/HevLfreis" target="_blank" class="button">Full on Github</a></li>
         </ul>
       </section>
-      <section id="three">
+      <section>
         <h2>Contact Me</h2>
-        <p>If you have any problem, please contact me (ﾉﾟ▽ﾟ)ﾉ</p>
+        <p>If you have any problem, please contact me <span class="shake shake-crazy shake-constant">(ﾉﾟ▽ﾟ)ﾉ</span></p>
         <div class="row">
           <div class="col-md-12">
             <ul class="labeled-icons">

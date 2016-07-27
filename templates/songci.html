@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='seed/css/bootstrap.css') }}" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='seed/css/main.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='plugins/rollbar/css/jquery.rollbar.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='seed/css/csshake.min.css') }}" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='seed/css/ie8.css') }}" /><![endif]-->
 	</head>
   <style type="text/css">
@@ -16,6 +17,18 @@
       width: 100%;
       height: 100%;
     }
+
+    @font-face {
+      /* font-properties */
+      font-family: shuti;
+      src:url("{{ url_for('static', filename='seed/fonts/shuti.ttf') }}")
+    }
+
+    .songci {
+      font-family: shuti, "Microsoft YaHei", sans-serif;
+      text-align: center;
+    }
+
   </style>
 	<body id="top">
     <header id="header">
@@ -23,7 +36,35 @@
       <h1>building the world</h1>
     </header>
     <div id="main">
-      {{ html | safe }}
+      <section id="one">
+        <header class="major" style="text-align: center">
+          <h2 class="songci">吟·宋词</h2>
+          <p>宋词生成器</p>
+          <h3>基于全宋词，通过训练RNN随机生成</h3>
+          <h4>妈妈再也不用担心我的语文， 我也可以吟诗作词了hhh </h4>
+          <h4>~(๑•́ ₃ •̀๑) <span class="shake shake-opacity shake-constant"> ✧</span></h4>
+        </header>
+
+      </section>
+      <section>
+        <ul class="actions">
+{#          <form method="post" action="#">#}
+{#            <div class="row uniform 50%">#}
+{#              <div class="2u 12u$(xsmall)"></div>#}
+{#              <div class="6u 12u$(xsmall)">#}
+{#                <input type="text" name="length" value="" placeholder="生成宋词的词数，小于1000">#}
+{#              </div>#}
+{#              <div class="2u$ 12u$(xsmall)">#}
+{#                <input type="submit" value="Submit" class="btn special" style="height: 2.75em;line-height: 0">#}
+{#              </div>#}
+{#              <div class="2u 12u$(xsmall)"></div>#}
+{#            </div>#}
+{#          </form>#}
+          {% for sc in scs %}
+            <h2 class="songci">{{ sc.decode('utf-8') }}</h2>
+          {% endfor %}
+        </ul>
+      </section>
     </div>
     <footer id="footer">
       <ul class="icons">
