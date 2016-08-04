@@ -19,13 +19,12 @@
     }
 
     @font-face {
-      /* font-properties */
-      font-family: shuti;
-      src:url("{{ url_for('static', filename='seed/fonts/shuti.ttf') }}")
+      font-family: guyin;
+      src:url("{{ url_for('static', filename='seed/fonts/yyguyin.ttf') }}")
     }
 
     .songci {
-      font-family: shuti, "Microsoft YaHei", sans-serif;
+      font-family: guyin, "Microsoft YaHei", sans-serif;
       text-align: center;
     }
 
@@ -48,18 +47,6 @@
       </section>
       <section>
         <ul class="actions">
-{#          <form method="post" action="#">#}
-{#            <div class="row uniform 50%">#}
-{#              <div class="2u 12u$(xsmall)"></div>#}
-{#              <div class="6u 12u$(xsmall)">#}
-{#                <input type="text" name="length" value="" placeholder="生成宋词的词数，小于1000">#}
-{#              </div>#}
-{#              <div class="2u$ 12u$(xsmall)">#}
-{#                <input type="submit" value="Submit" class="btn special" style="height: 2.75em;line-height: 0">#}
-{#              </div>#}
-{#              <div class="2u 12u$(xsmall)"></div>#}
-{#            </div>#}
-{#          </form>#}
           {% for sc in scs %}
             <h2 class="songci">{{ sc.decode('utf-8') }}</h2>
           {% endfor %}
@@ -84,12 +71,6 @@
     <script src="{{ url_for('static', filename='plugins/rollbar/js/jquery.easing.1.3.js') }}"></script>
     <script src="{{ url_for('static', filename='plugins/rollbar/js/jquery.mousewheel.js') }}"></script>
     <script src="{{ url_for('static', filename='plugins/rollbar/js/jquery.rollbar.min.js') }}"></script>
-    <script type="text/javascript">
-      $('body').rollbar({
-        sliderSize: '25%',
-        sliderOpacity: 0.3,
-        touchSpeed: 0.25,
-      });
-    </script>
+    <script src="{{ url_for('static', filename='seed/js/rollbar.js') }}"></script>
 	</body>
 </html>

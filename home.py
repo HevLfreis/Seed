@@ -54,7 +54,7 @@ def songci():
         print e
         return render_template('songci.html')
 
-    scs = res.split('\n')
+    scs = res.split('\n')[0:-1]
 
     return render_template('songci.html', scs=scs)
 
