@@ -2471,7 +2471,7 @@
 	#header {
 		background-color: #5f84c5;
 		background-attachment: scroll,								fixed;
-		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
+		background-image: url("images/overlay.png"), url("../../images/bg.png");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto 100%;
@@ -2828,7 +2828,8 @@
 
 	body.is-touch #header {
 		background-attachment: scroll;
-		background-size: auto, cover;
+		background-position: top left, bottom center;
+		background-size: 125%, 125%;
 	}
 
 	body.is-touch .poptrox-popup .nav-next,
@@ -2915,7 +2916,7 @@
 			#header {
 				background-attachment: scroll;
 				background-position: top left, center center;
-				background-size: auto,		cover;
+				background-size: 110%, 110%;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
@@ -2938,8 +2939,8 @@
 				background-attachment: scroll;
 				background-color: #1f1815;
 				/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
-				background-position: top left,						bottom center;
-				background-repeat: repeat,							no-repeat;
+				background-position: top left,	bottom center;
+				background-repeat: repeat,	no-repeat;
 				background-size: auto,							cover;
 				bottom: auto;
 				left: auto;
@@ -2982,11 +2983,11 @@
 		/* Basic */
 
 			h1 {
-				font-size: 1.5em;
+				font-size: 1.6em;
 			}
 
 			h2 {
-				font-size: 1.2em;
+				font-size: 1.4em;
 			}
 
 			h3 {
@@ -3000,7 +3001,7 @@
 			}
 
 			header.major h2 {
-				font-size: 1.35em;
+				font-size: 1.8em;
 			}
 
 		/* List */

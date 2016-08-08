@@ -34,3 +34,29 @@
 # # print D.nodes()
 #
 #
+# import codecs
+# import urllib2
+#
+# from bs4 import BeautifulSoup
+#
+# jitang = codecs.open('jitang.txt', 'w', 'utf-8')
+#
+# for i in xrange(1, 1609):
+#     print 'iter: ', i
+#
+#     try:
+#         response = urllib2.urlopen('http://www.59xihuan.cn/index_'+str(i)+'.html')
+#     except:
+#         print 'error: ', i
+#         continue
+#
+#     data = response.read()
+#     soup = BeautifulSoup(data, "html.parser")
+#     for link in soup.find_all('a'):
+#         # print link
+#         if not link.get('title'):
+#             a = link.get('href')
+#             if a and (a.startswith(u'/yulu') or a.startswith(u'content')):
+#                 jitang.write(link.string+'\n')
+# jitang.close()
+

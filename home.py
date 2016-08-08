@@ -45,7 +45,7 @@ def songci():
     sh = ". /home/hevlfreis/torch/install/bin/torch-activate;" \
                  "th /home/hevlfreis/torch/torch-rnn/sample.lua " \
                  "-checkpoint /home/hevlfreis/model/songci/checkpoint_53000.t7 " \
-                 "-length " + "250" + " -gpu -1"
+                 "-length " + "300" + " -gpu -1"
 
     try:
 
@@ -54,7 +54,7 @@ def songci():
         print e
         return render_template('songci.html')
 
-    scs = res.split('\n')[0:-1]
+    scs = res.split('\n')[1:-1]
 
     return render_template('songci.html', scs=scs)
 
