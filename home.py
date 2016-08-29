@@ -5,7 +5,7 @@ import misaka as m
 import subprocess
 from flask import render_template, send_from_directory, request
 
-from config import app, logger
+from config import app, logger, db
 
 
 # @app.route('/static/images/md/<path>')
@@ -25,38 +25,43 @@ def seed():
     #     print 'Seed Exception: ', e
     # finally:
     #     print 'Seed'
-    logger.info('('+request.remote_addr+')')
+    logger.info('(' + get_addr(request) + ')')
+    db.counter.update_one({'counter': 'home'}, {'$inc': {'value': 1}})
     return render_template('index.html')
 
 
 @app.route('/resume')
 def resume():
-    logger.info('('+request.remote_addr+')')
-    with codecs.open(app.static_folder+'/files/md/resume.md', 'r', encoding='utf8') as f:
+    logger.info('(' + get_addr(request) + ')')
+    db.counter.update_one({'counter': 'resume'}, {'$inc': {'value': 1}})
+    with codecs.open(app.static_folder + '/files/md/resume.md', 'r', encoding='utf8') as f:
         text = f.read()
     res = m.html(text)
-    return render_template('blank.html', html=res)
+    return render_template('blank.html', html=res, title='Resume')
 
 
 @app.route('/songci')
 def songci():
-    logger.info('('+request.remote_addr+')')
+    logger.info('(' + get_addr(request) + ')')
 
     sh = ". /home/hevlfreis/torch/install/bin/torch-activate;" \
-                 "th /home/hevlfreis/torch/torch-rnn/sample.lua " \
-                 "-checkpoint /home/hevlfreis/model/songci/checkpoint_53000.t7 " \
-                 "-length " + "300" + " -gpu -1"
+         "th /home/hevlfreis/torch/torch-rnn/sample.lua " \
+         "-checkpoint /home/hevlfreis/model/songci/checkpoint_53000.t7 " \
+         "-length " + "300" + " -gpu -1"
 
     try:
-
         res = subprocess.check_output(sh, shell=True).strip()
     except Exception, e:
         print e
         return render_template('songci.html')
 
     scs = res.split('\n')[1:-1]
+    db.songci.insert_one({'host': get_addr(request), 'content': scs})
+    count = db.counter.find_one({'counter': 'songci'})['lines']
+    db.counter.update_one({'counter': 'songci'}, {'$inc': {'value': 1, 'lines': len(scs)}})
 
-    return render_template('songci.html', scs=scs)
+    return render_template('songci.html', scs=scs, count=count)
+
 
 # @app.route('/seeleit.com.html')
 # def ssl():
@@ -93,6 +98,13 @@ def songci():
 #
 #     return render_template('blank.html', html=html)
 
+
+def get_addr(req):
+    if req.headers.getlist("X-Forwarded-For"):
+        ip = req.headers.getlist("X-Forwarded-For")[0]
+    else:
+        ip = req.remote_addr
+    return ip
+
 if __name__ == '__main__':
     app.run()
-

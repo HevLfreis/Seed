@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/html">
 	<head>
-		<title>SEED | HT's Avalon</title>
+		<title>SEED | Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="{{ url_for('static', filename='seed/css/main.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='seed/css/csshake.min.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='plugins/rollbar/css/jquery.rollbar.css') }}" />
-
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='seed/css/ie8.css') }}" /><![endif]-->
 	</head>
   <style type="text/css">
@@ -27,7 +26,7 @@
   </style>
 	<body id="top">
     <header id="header">
-      <a href="/" class="image avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="" /></a>
+      <a href="/" class="image avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="HT" /></a>
 {#				<h1><strong>H. Teng</strong></h1>#}
       <h1>building the world</h1>
     </header>
@@ -48,7 +47,7 @@
         <div class="row">
           <article class="col-md-6 work-item">
             <a href="/songci" class="image fit thumb"><img src="{{ url_for('static', filename='images/fulls/sc.jpg') }}" alt="" /></a>
-            <h3 class="git">吟宋词</h3>
+            <h3 class="git" onclick="window.open('https://github.com/HevLfreis/songci-rnn')">吟宋词</h3>
             <p>RNN 宋词生成器</p>
           </article>
           <article class="col-md-6 work-item">

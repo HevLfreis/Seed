@@ -34,29 +34,45 @@
 # # print D.nodes()
 #
 #
-# import codecs
-# import urllib2
-#
-# from bs4 import BeautifulSoup
-#
-# jitang = codecs.open('jitang.txt', 'w', 'utf-8')
-#
-# for i in xrange(1, 1609):
-#     print 'iter: ', i
-#
-#     try:
-#         response = urllib2.urlopen('http://www.59xihuan.cn/index_'+str(i)+'.html')
-#     except:
-#         print 'error: ', i
-#         continue
-#
-#     data = response.read()
-#     soup = BeautifulSoup(data, "html.parser")
-#     for link in soup.find_all('a'):
-#         # print link
-#         if not link.get('title'):
-#             a = link.get('href')
-#             if a and (a.startswith(u'/yulu') or a.startswith(u'content')):
-#                 jitang.write(link.string+'\n')
-# jitang.close()
+import codecs
+import urllib2
+
+import re
+from bs4 import BeautifulSoup
+
+cn = codecs.open('cn.txt', 'w', 'utf-8')
+en = codecs.open('en.txt', 'w', 'utf-8')
+
+sym_reg = ur'[\u3002|\uff1f|\uff01|\uff0c|\u3001]'
+chn_reg = ur'[^\u4E00-\u9FA5]'
+
+for i in xrange(1, 30480):
+    print 'iter: ', i
+
+    try:
+        response = urllib2.urlopen('http://www.cuyoo.com/article-'+str(i)+'-1.html')
+    except:
+        print 'error: ', i
+        continue
+
+    data = response.read()
+    soup = BeautifulSoup(data, "html.parser")
+    en_news = soup.find(id='en')
+    if en_news:
+        # en_news = re.sub('[\n|(\((.|\s)*\))]', '', en_news.getText())
+        # print en_news.getText()
+        en_news_st = en_news.getText().split('.')
+        print len(en_news_st)
+
+    cn_news = soup.find(id='cn')
+    if cn_news:
+        print cn_news.getText()
+        cn_news = re.sub(ur'[\n|(\((.|\s)*\))]', '', cn_news.getText())
+        print '======='
+        print cn_news
+        cn_news_st = cn_news.split(u'。')
+        print len(cn_news_st)
+
+    a = raw_input()
+
 
