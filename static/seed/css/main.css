@@ -2370,7 +2370,7 @@ input[type="button"]:disabled,
 #header {
     background-color: #66ccff;
     background-attachment: scroll, fixed;
-    background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+    background-image: url("images/overlay.png"), url("../../images/bg3.png");
     background-position: top left, top left;
     background-repeat: repeat, no-repeat;
     background-size: auto, auto 100%;
@@ -2727,8 +2727,8 @@ body.is-touch .image.thumb:after {
 
 body.is-touch #header {
     background-attachment: scroll;
-    background-position: top left, center left;
-    /*background-size: 125%, 125%;*/
+    background-position: top left, bottom center;
+    background-size: 125%, 125%;
 }
 
 body.is-touch .poptrox-popup .nav-next,
@@ -2808,7 +2808,7 @@ body.is-touch .poptrox-popup .closer {
     #header {
         background-attachment: scroll;
         background-position: top left, center center;
-        background-size: 180%, 180%;
+        background-size: 125%, 125%;
         left: auto;
         padding: 6em 4em;
         position: relative;

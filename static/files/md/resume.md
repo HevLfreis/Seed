@@ -1,14 +1,14 @@
 # 滕岩松
-> [代码拯救世界](http://tieba.baidu.com/p/3579885411)
+> [技术宅拯救世界](http://tieba.baidu.com/p/3579885411)  
+> 最遗憾没有学一门乐器，但是敲键盘的感觉也不错呢（笑）
 
-## 专业技能 
-- Java   
+## 专业技能  
 - python  
+- Java  
 - frontend: html, css, javascript  
 - C++  
 
 ## 个人信息
-- 电话: +86 18516583360
 - 邮箱: hevlhayt@foxmail.com
 - 生日: 1993.02.08
 - 学校: 上海交通大学
@@ -20,14 +20,21 @@
 2. **西安交通大学 - 本科**
     - 应用物理学（试验班） 
     - 光信息科学与技术 [2011 09-2015 07]  
+	
+## 其他信息
+- CET6: 566, CET4: 574
+- 个人主页: <http://seeleit.com>
+- Github: <http://github.com/HevLfreis>  
 
-## 项目经历
+## 个人经历
 1. ### 复杂网络与控制实验室 [2016 04-今]
     **LineMe**  
 	LineMe是一个用来搜集多层社交网络数据的网站。  
 	[Live](http://lime.seeleit.com/), [Github](https://github.com/HevLfreis/LineMe)
 
-2. ### Nuance Shanghai NLU R&D team Engineer 实习生 [2016 06-今]
+2. ### Nuance Shanghai NLU R&D team Engineer 实习生 [2016 06-2016 09]
+	负责NLU数据管理平台Cookit的搭建，探索现有机器学习框架（Torch，Tensorflow，MXNet）下文本生成、分类、提取、翻译等NLP方面的相关应用。  
+	[Github](https://github.com/HevLfreis/Cookit)
 	
 3. ### 理想杯大学生大数据创新应用与建模大赛 二等奖（第二名） [2016 03-2016 06]
     **智慧社区**  
@@ -48,42 +55,35 @@
 	  Devicejudge是一个网络流量的监控平台。通过抓取网络流量，识别用户上网的设备，监控用户上网的行为。  
 	[Live](http://dj.seeleit.com/), [Github](https://github.com/HevLfreis/Devicejudge)
 
-
 6. ### 其他
+	- **Chat2x** : 匿名二次元聊天室。[Live](http://drrr.seeleit.com/), [Github](https://github.com/HevLfreis/Chat2x)
 	- **吟宋词** : 基于RNN的宋词生成器。[Live](http://seeleit.com/songci), [Github](https://github.com/HevLfreis/songci-rnn)
 	- **SWeather** : 安卓天气应用。[Download](http://seeleit.com/static/files/SWeather.apk), [Github](https://github.com/HevLfreis/SWeather)
 	
 ## 技术栈
 1. Google, stackoverflow
 2. Git
-3. bootstrap, jQuery, d3, echart, highcharts
-4. https, django, flask
-5. SEAndroid, libselinux, ContentProvider, IntentFirewall, System Settings
+3. bootstrap, jQuery, vue, d3, echart, highcharts
+4. django, flask，nodejs
+5. SEAndroid, libselinux, ContentProvider, IntentFirewall, Android Settings
 6. Android, Viewpager, Fragment
 7. Torch, RNN, LSTM
-8. 服务端: 部署在阿里云, Nginx和Apache动静分离
-9. 数据库: MySQL, mongoDB
-
-
-## 其他信息
-- CET6: 566, CET4: 574
-- 个人主页: <http://seeleit.com>
-- Github: <http://github.com/HevLfreis>
+8. 服务端: 部署在阿里云, Nginx、Apache动静分离, memcached缓存, 部分站点https加密
+9. 数据库: MySQL, PostgreSQL, mongoDB
 
 ***
 
 # Haytham Teng
-> [Coding saves the world](http://tieba.baidu.com/p/3579885411)
+> [Tech otaku saves the world](http://tieba.baidu.com/p/3579885411)  
+> Regret not learning an instrument, but enjoying tapping the keyboard :)
 
 ## Skills 
-- Java   
 - python  
+- Java     
 - frontend: html, css, javascript  
 - C++  
 
-
 ## Personal Infomation
-- Phone: +86 18516583360
 - Email: hevlhayt@foxmail.com
 - Birth: 1993.02.08
 - School: SJTU
@@ -95,26 +95,33 @@
 2. **Xi'an Jiaotong University - Undergraduate** 
 	- Applied Physics (experimental class)  
 	- Optical Information Science and Technology [2011 09-2015 07]  
+	
+## Additional Infomation
+- CET6: 566, CET4: 574
+- Homepage: <http://www.seeleit.com>
+- Github: <http://github.com/HevLfreis>
 
 ## Experience
-1. ### Complex Network and Control Lab
+1. ### Complex Network and Control Lab [2016 04-now]
 	**LineMe**  
     LineMe is a mutiplex social network data collecting website by d3.js and django.  
     [Live](http://lime.seeleit.com/), [Github](https://github.com/HevLfreis/LineMe)
 
-2. ### Nuance Shanghai NLU R&D team Engineer Intern
+2. ### Nuance Shanghai NLU R&D team Engineer Intern [2016 06-2016 09]
+	Responsible for NLU Data Management platform Cookit, research NLU applications on text generation, classification, slot filling and translation.  
+	[Github](https://github.com/HevLfreis/Cookit)
 
-3. ### Lixiang Cup Data Contest of China Telecom (Second Place)
+3. ### Lixiang Cup Data Contest of China Telecom (Second Place) [2015 04-2015 07]
     **Intelligent Community**  
     China Telecom has provided more than 30T data of mobile and wire-network to explore. Our team focus on the community commerce in modern cities.  
     [Live](http://ic.seeleit.com/), [Github](https://github.com/HevLfreis/IComm)
 
-4. ### National College Infomation Security Contest (Second Prize)
+4. ### National College Infomation Security Contest (Second Prize) [2015 04-2015 07]
     **MDIDroid: Multi-Domain Isolation Android security system**  
     MDIDroid is a security Android system based on Android 4.4.2 KitKat. The main purpose of the system is to protect different apps of different uses. As a customized system of SEAndroid, we extend its MAC module to user-level. Instead of checking the signature to allocate the corresponding domain for the app in SEAndroid, MDIDroid check the package name for achieving more flexibility and freedom.  
     [Video](http://v.youku.com/v_show/id_XMTQ4MDkyNTg4OA==.html), [Github](https://github.com/HevLfreis/MDIDroid)
 
-5. ### Ministry of Education Key Lab For Intelligent Network and Network Security
+5. ### Ministry of Education Key Lab For Intelligent Network and Network Security [2013 07-2013 08]
     - **AAP: Android apk analysis web platform**  
       The project is an Android apk static analysis web platform. Here you can upload your apk file to check out its static security info. Also, we collect over 10000 apk samples from Android markets and present the statistics of all the apks.  
     [Live](http://aap.seeleit.com/), [Github](https://github.com/HevLfreis/AAP)
@@ -123,26 +130,21 @@
       Devicejudge(DJ) is a basic monitoring platform which focus on the user behaviors, like devices and apps people usage, in net traffic. DJ comprises two parts: traffic scanner and web dashboard. The traffic scanner captures the info of devices and apps through HTTP UserAgent and app fingerprints from net traffic. The web dashboard is used to manage the info we have collected.  
     [Live](http://dj.seeleit.com/), [Github](https://github.com/HevLfreis/Devicejudge)
 
-
 6. ### Others
+	- **Chat2x** : Anonymous anime chatroom. [Live](http://drrr.seeleit.com/), [Github](https://github.com/HevLfreis/Chat2x)
 	- **songci-rnn** : Generating Songci (Poetry of the Song Dynasty) by machine. [Live](http://seeleit.com/songci), [Github](https://github.com/HevLfreis/songci-rnn)
 	- **SWeather** : Android weather app. [Download](http://seeleit.com/static/files/SWeather.apk), [Github](https://github.com/HevLfreis/SWeather)
 
 ## 技术栈
 1. Google, stackoverflow
 2. Git
-3. bootstrap, jQuery, d3, echart, highcharts
-4. https, django, flask
-5. SEAndroid, libselinux, ContentProvider, IntentFirewall, System Settings
+3. bootstrap, jQuery, vue, d3, echart, highcharts
+4. django, flask, nodejs
+5. SEAndroid, libselinux, ContentProvider, IntentFirewall, Android Settings
 6. Android, Viewpager, Fragment
 7. Torch, RNN, LSTM
-8. Server: Aliyun, using Nginx as front-end proxy to serve static and Apache to serve dynamic in back-end
-9. Database: MySQL, mongoDB
-
-## Additional Infomation
-- CET6: 566, CET4: 574
-- Homepage: <http://www.seeleit.com>
-- Github: <http://github.com/HevLfreis>
+8. Server: Aliyun, Nginx and Apache static and dynamic separation, memcached, encrypted some sites by https 
+9. Database: MySQL, PostgreSQL, mongoDB
 
 
 

@@ -77,7 +77,7 @@
 						if (skel.breakpoint('medium').active) {
 
 							$window.off('scroll.strata_parallax');
-							$header.css('background-position', 'top left, center left');
+							$header.css('background-position', 'top left, center bottom');
 
 						}
 						else {

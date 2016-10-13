@@ -33,11 +33,12 @@
     <div id="main">
       <section>
         <header class="major">
-          <h2>Here's SEED</h2>
+          <h2>SEED </h2>
+          <h3>@HevLfreis</h3>
           <h3>Hi , I am Haytham Teng , Welcome to my homepage</h3>
-          <h4>A coder, tech otaku, music gamer, cloud cating and pixiv (= =)</h4>
+          <h4>A coder, tech otaku, HiFi, music gamer, cloud cating and pixiv ( ﾟДﾟ)_σ<span class="shake shake-slow shake-constant">异议あり!!</span> </h4>
         </header>
-        <p>&lt;tu fui , ego eris&gt; </p>
+        <p>&lt;HTT&gt; </p>
         <ul class="actions">
           <li><a href="/resume" class="button">About Me</a></li>
         </ul>
@@ -46,14 +47,14 @@
         <h2>My Projects</h2>
         <div class="row">
           <article class="col-md-6 work-item">
+            <a href="http://drrr.seeleit.com/" target="_blank" class="image fit proj"><img src="{{ url_for('static', filename='images/fulls/cx.jpg') }}" alt="" /></a>
+            <h3 class="git" onclick="window.open('https://github.com/HevLfreis/Chat2x')">Chat2x</h3>
+            <p>Drrr like chatroom with anime characters</p>
+          </article>
+          <article class="col-md-6 work-item">
             <a href="/songci" class="image fit proj"><img src="{{ url_for('static', filename='images/fulls/sc.jpg') }}" alt="" /></a>
             <h3 class="git" onclick="window.open('https://github.com/HevLfreis/songci-rnn')">吟宋词</h3>
             <p>RNN 宋词生成器</p>
-          </article>
-          <article class="col-md-6 work-item">
-            <a href="/" class="image fit proj"><img src="{{ url_for('static', filename='images/fulls/ud.jpg') }}" alt="" /></a>
-            <h3 class="git" onclick="window.open('https://github.com/HevLfreis/Chat2x')">Chat2x</h3>
-            <p>Drrr like chatroom with anime characters</p>
           </article>
           <article class="col-md-6 work-item">
             <a href="http://lime.seeleit.com/" target="_blank" class="image fit proj"><img src="{{ url_for('static', filename='images/fulls/lm.jpg') }}" alt="" /></a>
@@ -129,6 +130,6 @@
     <script src="{{ url_for('static', filename='plugins/rollbar/js/jquery.mousewheel.js') }}"></script>
     <script src="{{ url_for('static', filename='plugins/rollbar/js/jquery.rollbar.min.js') }}"></script>
     <script src="{{ url_for('static', filename='seed/js/rollbar.js') }}"></script>
-
+    <script src="{{ url_for('static', filename='seed/js/analytics.js') }}"></script>
 	</body>
 </html>
