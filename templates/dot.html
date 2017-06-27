@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+	<head>
+		<title>SEED | {{ title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<!--[if lte IE 8]><script src="{{ url_for('static', filename='seed/js/ie/html5shiv.js') }}"></script><![endif]-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='seed/css/bootstrap.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='seed/css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/scrollbar/css/jquery.mCustomScrollbar.css') }}">
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='seed/css/ie8.css') }}" /><![endif]-->
+	</head>
+  <style type="text/css">
+    body,html {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+	<body id="top">
+    <header id="header" class="normal">
+      <a href="/" class="image avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="" /></a>
+      <h1>building the world</h1>
+    </header>
+    <div id="main" style="padding: 0">
+      <div id="chart"></div>
+    </div>
+    <footer id="footer">
+      <ul class="icons">
+        <li><a href="https://github.com/HevLfreis" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; 2016 HT All Rights Reserved.</li>
+      </ul>
+    </footer>
+
+    <script src="{{ url_for('static', filename='seed/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='seed/js/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='seed/js/skel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='seed/js/echarts.min.js') }}"></script>
+    <!--[if lte IE 8]><script src="{{ url_for('static', filename='seed/js/ie/respond.min.js') }}"></script><![endif]-->
+    <script src="{{ url_for('static', filename='seed/js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/scrollbar/js/jquery.mCustomScrollbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='seed/js/regular.js') }}"></script>
+    <script src="{{ url_for('static', filename='seed/js/dot.js') }}"></script>
+    <script src="{{ url_for('static', filename='seed/js/analytics.js') }}"></script>
+	</body>
+</html>
