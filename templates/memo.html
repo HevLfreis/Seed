@@ -1,73 +1,10 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-	<head>
-		<title>SEED | HT's Avalon</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/html5shiv.js') }}"></script><![endif]-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
-
-		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='css/ie8.css') }}" /><![endif]-->
-	</head>
-  <style type="text/css">
-    h3:hover {
-      cursor: pointer;
-      text-decoration:underline;
-    }
-  </style>
-	<body id="top">
-
-		<!-- Header -->
-			<header id="header">
-				<a href="/" class="image avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="" /></a>
-        <h1>nothing to cele, fight inside peace</h1>
-			</header>
-
-
-		<!-- Main -->
-			<div id="main">
-        <header class="major">
-          <h2>Memos</h2>
-        </header>
-      <ol>
-        {% for memo in memos %}
-          <li>
-            <h3 class="cat" onclick="window.location.href='/memo/{{ memo.id }}'">{{ memo.title }}<span class="pull-right">{{ memo.timestamp }}</span></h3>
-          </li>
-        {% endfor %}
-      </ol>
-
-
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-
-          <li><a href="https://github.com/HevLfreis" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-{#					<li><a href="#" class="icon fa-weibo"><span class="label">Twitter</span></a></li>#}
-{#					<li><a href="#" class="icon fa-linkedin"><span class="label">Dribbble</span></a></li>#}
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2016 HT All Rights Reserved.</li>
-				</ul>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
-{#			<script src="{{ url_for('static', filename='js/util.js') }}"></script>#}
-			<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/respond.min.js') }}"></script><![endif]-->
-			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
-
-	</body>
-</html>
+<header class="major">
+  <h2 class="memo">SNOW</h2>
+  <h3 class="memo">@HevLfreis & smallmeow</h3>
+  <h3 class="memo">We met for quartet and cat. Lost in your smile and Love you till now.</h3>
+  <h4 class="memo">I'd like to color every single day in your life. {{ days }} days and forever.</h4>
+</header>
+<p id="music" class="memo" style="cursor: pointer" title="Play Music">&lt;♪ : 君の伴奏者&gt;</p>
+<ul class="actions" style="visibility: hidden">
+  <li><a href="/resume" class="button">About Me</a></li>
+</ul>

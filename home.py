@@ -1,6 +1,7 @@
 # coding: utf-8
 import codecs
 
+import datetime
 import misaka as m
 import subprocess
 from flask import render_template, send_from_directory, request
@@ -28,6 +29,13 @@ def seed():
     logger.info('(' + get_addr(request) + ')')
     db.counter.update_one({'counter': 'home'}, {'$inc': {'value': 1}})
     return render_template('index.html')
+
+
+@app.route('/memo')
+def memo():
+    day = datetime.datetime.now()
+    mem = datetime.datetime(2017, 3, 12)
+    return render_template('memo.html', title='Memo', days=(day-mem).days)
 
 
 @app.route('/resume')
@@ -63,6 +71,11 @@ def songci():
     return render_template('songci.html', scs=scs, count=count)
 
 
+@app.route('/dot')
+def dot():
+    return render_template('dot.html', title='Dot')
+
+
 # @app.route('/seeleit.com.html')
 # def ssl():
 #     return 'bVFMVmE1aWl0OVI0Zk5oOE5aOVJtWkpkRHZXSnBuOTRpRmdVVHNEempPZz0'
@@ -73,11 +86,6 @@ def songci():
 #     return render_template('cat.html')
 #
 #
-# @app.route('/memo')
-# def memo():
-#     memos = db.session.query(MarkDown).filter_by(cat='memo').all()
-#     # print memos
-#     return render_template('cat2.html', title='Memo', cats=memos)
 #
 #
 # @app.route('/acg')

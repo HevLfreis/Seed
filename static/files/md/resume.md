@@ -3,9 +3,9 @@
 > 最遗憾没有学一门乐器，但是敲键盘的感觉也不错呢（笑）
 
 ## 专业技能  
-- python  
+- Python  
 - Java  
-- frontend: html, css, javascript  
+- frontend 
 - C++  
 
 ## 个人信息
@@ -27,14 +27,13 @@
 - Github: <http://github.com/HevLfreis>  
 
 ## 个人经历
-1. ### 复杂网络与控制实验室 [2016 04-今]
-    **LineMe**  
-	LineMe是一个用来搜集多层社交网络数据的网站。  
+1. ### 复杂网络与控制实验室 [2016 04-2016 11]
+    **LineMe：线下社交网络的实验平台**  
+	LineMe旨在解决现有社会网络数据的局限性，利用网页技术代替传统的问卷模式，有效地获得用户间的朋友网络关系。利用多种可视化技术，让用户在简单轻松地操作中构建自己的朋友网络。  
 	[Live](http://lime.seeleit.com/), [Github](https://github.com/HevLfreis/LineMe)
 
 2. ### Nuance Shanghai NLU R&D team Engineer 实习生 [2016 06-2016 09]
-	负责NLU数据管理平台Cookit的搭建，探索现有机器学习框架（Torch，Tensorflow，MXNet）下文本生成、分类、提取、翻译等NLP方面的相关应用。  
-	[Github](https://github.com/HevLfreis/Cookit)
+	负责自然语言理解NLU数据管理平台Cookit的搭建，探索现有机器学习框架下文本生成、分类、提取、翻译等NLP方面的相关应用。  
 	
 3. ### 理想杯大学生大数据创新应用与建模大赛 二等奖（第二名） [2016 03-2016 06]
     **智慧社区**  
@@ -46,8 +45,8 @@
 	MDIDroid是基于安卓4.4.2的一个安全增强系统。我们希望可以将不同用途的应用安装在不同的安全域内来保护应用的安全。通过扩展SEAndroid的安全模块，遵循不同域不同安全策略，实现了对应用数据，应用进程间通信和系统私密信息的三重保护。  
     [Video](http://v.youku.com/v_show/id_XMTQ4MDkyNTg4OA==.html), [Github](https://github.com/HevLfreis/MDIDroid)
 
-5. ### 西安交通大学智能网络与网络安全教育部重点实验室 [2013 07-2013 08]
-	- **AAP: Android应用程序分析Web平台**  
+5. ### 西安交通大学智能网络与网络安全教育部重点实验室 [2013 08-2013 09]
+	- **AAP: Android应用程序分析平台**  
 	  AAP是一个安卓应用风险静态分析平台，对海量的安卓应用信息进行提取、整理和统计。我们提供了网站查看统计信息，并允许用户自己上传应用。  
 	[Live](http://aap.seeleit.com/), [Github](https://github.com/HevLfreis/AAP)
 
@@ -63,13 +62,15 @@
 ## 技术栈
 1. Google, stackoverflow
 2. Git
-3. bootstrap, jQuery, vue, d3, echart, highcharts
-4. django, flask，nodejs
-5. SEAndroid, libselinux, ContentProvider, IntentFirewall, Android Settings
-6. Android, Viewpager, Fragment
+3. Bootstrap, jQuery, Vue.js, D3.js, echarts, three.js, Highcharts
+4. Django, Flask, Node.js
+5. SEAndroid, Android Framework
+6. Android Viewpager, Fragment
 7. Torch, RNN, LSTM
-8. 服务端: 部署在阿里云, Nginx、Apache动静分离, memcached缓存, 部分站点https加密
-9. 数据库: MySQL, PostgreSQL, mongoDB
+8. 数据库: MySQL, PostgreSQL, mongoDB, Redis
+9. Server: 部署在云端, Nginx, Apache动静分离, Redis缓存, 站点https加密
+
+- [简历PDF下载](http://seeleit.com/static/files/cv.pdf)
 
 ***
 
@@ -78,9 +79,9 @@
 > Regret not learning an instrument, but enjoying tapping the keyboard :)
 
 ## Skills 
-- python  
+- Python  
 - Java     
-- frontend: html, css, javascript  
+- frontend
 - C++  
 
 ## Personal Infomation
@@ -103,31 +104,30 @@
 
 ## Experience
 1. ### Complex Network and Control Lab [2016 04-now]
-	**LineMe**  
-    LineMe is a mutiplex social network data collecting website by d3.js and django.  
+	**LineMe：Offline Social Network Experiments**
+	LineMe aims at solving the deficiency of traditional social network data. Taking advantage of modern web technologies, we are to achieve valid connections between users instead of Q&A. Users could map their friend networks through an easy to use font-end interface.
     [Live](http://lime.seeleit.com/), [Github](https://github.com/HevLfreis/LineMe)
 
 2. ### Nuance Shanghai NLU R&D team Engineer Intern [2016 06-2016 09]
-	Responsible for NLU Data Management platform Cookit, research NLU applications on text generation, classification, slot filling and translation.  
-	[Github](https://github.com/HevLfreis/Cookit)
+	Responsible for Nature Language Understanding (NLU) Data Management platform Cookit. Exploit new researches of NLU applications on text generation, classification, slot filling and translation.  
 
 3. ### Lixiang Cup Data Contest of China Telecom (Second Place) [2015 04-2015 07]
     **Intelligent Community**  
-    China Telecom has provided more than 30T data of mobile and wire-network to explore. Our team focus on the community commerce in modern cities.  
-    [Live](http://ic.seeleit.com/), [Github](https://github.com/HevLfreis/IComm)
+	China Telecom has provided more than 30T data of mobile phone and wire -networks to explore. We mainly focused on the community commerce in modern cities. Trying to fill the gap of reality and investment, based on the communication data, we extract ideas in target areas and divide people into different segments. Also, we provide a web interface for investors to explore.  
+	[Live](http://ic.seeleit.com/), [Github](https://github.com/HevLfreis/IComm)
 
 4. ### National College Infomation Security Contest (Second Prize) [2015 04-2015 07]
     **MDIDroid: Multi-Domain Isolation Android security system**  
-    MDIDroid is a security Android system based on Android 4.4.2 KitKat. The main purpose of the system is to protect different apps of different uses. As a customized system of SEAndroid, we extend its MAC module to user-level. Instead of checking the signature to allocate the corresponding domain for the app in SEAndroid, MDIDroid check the package name for achieving more flexibility and freedom.  
+    MDIDroid is a security-enchanced Android system based on Android 4.4.2 KitKat. We seperate apps of different uses to different safety domains to guarantee the safety of apps. Through the extension SEAndroid module written by us, we have implemented  protections on private data and communication between apps according to their domains.
     [Video](http://v.youku.com/v_show/id_XMTQ4MDkyNTg4OA==.html), [Github](https://github.com/HevLfreis/MDIDroid)
 
-5. ### Ministry of Education Key Lab For Intelligent Network and Network Security [2013 07-2013 08]
+5. ### Ministry of Education Key Lab For Intelligent Network and Network Security [2013 08-2013 09]
     - **AAP: Android apk analysis web platform**  
       The project is an Android apk static analysis web platform. Here you can upload your apk file to check out its static security info. Also, we collect over 10000 apk samples from Android markets and present the statistics of all the apks.  
     [Live](http://aap.seeleit.com/), [Github](https://github.com/HevLfreis/AAP)
 	
 	- **Devicejudge: A platfrom of monitoring user behaviors in net traffic**  
-      Devicejudge(DJ) is a basic monitoring platform which focus on the user behaviors, like devices and apps people usage, in net traffic. DJ comprises two parts: traffic scanner and web dashboard. The traffic scanner captures the info of devices and apps through HTTP UserAgent and app fingerprints from net traffic. The web dashboard is used to manage the info we have collected.  
+      Devicejudge is a platfrom to monitor user behaviors in net traffic. By capturing network flow, we recongnize different apps and devices as well as monitor user behaviours in the continuous data.  
     [Live](http://dj.seeleit.com/), [Github](https://github.com/HevLfreis/Devicejudge)
 
 6. ### Others
@@ -135,18 +135,18 @@
 	- **songci-rnn** : Generating Songci (Poetry of the Song Dynasty) by machine. [Live](http://seeleit.com/songci), [Github](https://github.com/HevLfreis/songci-rnn)
 	- **SWeather** : Android weather app. [Download](http://seeleit.com/static/files/SWeather.apk), [Github](https://github.com/HevLfreis/SWeather)
 
-## 技术栈
+## Stack
 1. Google, stackoverflow
 2. Git
-3. bootstrap, jQuery, vue, d3, echart, highcharts
-4. django, flask, nodejs
-5. SEAndroid, libselinux, ContentProvider, IntentFirewall, Android Settings
-6. Android, Viewpager, Fragment
+3. Bootstrap, jQuery, Vue.js, D3.js, echarts, three.js, Highcharts
+4. Django, Flask, Node.js
+5. SEAndroid, Android Framework
+6. Android Viewpager, Fragment
 7. Torch, RNN, LSTM
-8. Server: Aliyun, Nginx and Apache static and dynamic separation, memcached, encrypted some sites by https 
-9. Database: MySQL, PostgreSQL, mongoDB
+8. Database: MySQL, PostgreSQL, mongoDB, Redis
+9. Server: Deployed in cloud server, Nginx, Apache static and dynamic separation, Redis cache, encrypted some sites by https
 
-
+- [Download PDF](http://seeleit.com/static/files/cv_en.pdf)
 
 
 

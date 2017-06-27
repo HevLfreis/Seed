@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
 /*
 	Strata by HTML5 UP
@@ -1521,7 +1521,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.1em;
+    font-size: 1.0em;
     line-height: 1.5em;
 }
 
@@ -2370,10 +2370,8 @@ input[type="button"]:disabled,
 #header {
     background-color: #66ccff;
     background-attachment: scroll, fixed;
-    background-image: url("images/overlay.png"), url("../../images/bg3.png");
-    background-position: top left, top left;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, auto 100%;
+
+    /*background-size: auto, auto 120%;*/
     color: rgba(255, 255, 255, 0.5);
     height: 100%;
     left: 0;
@@ -2382,6 +2380,20 @@ input[type="button"]:disabled,
     text-align: right;
     top: 0;
     width: 30%;
+}
+
+#header.normal {
+    background-image: url("images/overlay.png"), url("../../images/bg3.png");
+    background-position: top left, top left;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, auto 100%;
+}
+
+#header.another {
+    background-image: url("images/overlay.png"), url("../../images/bg4.png");
+    background-position: top left, top left;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, auto 118%;
 }
 
 #header strong, #header b {
@@ -2402,6 +2414,7 @@ input[type="button"]:disabled,
 #header .image.avatar {
     margin: 0 0 1em 0;
     width: 6.25em;
+    opacity: 0.8;
 }
 
 /* Footer */
@@ -2881,7 +2894,7 @@ body.is-touch .poptrox-popup .closer {
     }
 
     h3 {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     /* Section/Article */
@@ -2996,3 +3009,4 @@ body.is-touch .poptrox-popup .closer {
     }
 
 }
+
